@@ -8,8 +8,16 @@ export default {
   ],
   theme: {
     extend: {
-     
+     colors : {
+      primaryColor : '#34967C',
+      seconadyColor : '#161117',
+      accentColor: '#FFA800',
+     },
+     screens: {
+      'xl2': '1440px',
+      'xl3': '1728px',
     },
+    }
   },
   plugins: [],
 } satisfies Config;
