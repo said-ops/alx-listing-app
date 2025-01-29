@@ -1,3 +1,4 @@
+//property props 
 export interface PropertyProps {
     name: string;
     address: {
