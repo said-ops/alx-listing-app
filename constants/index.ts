@@ -1,3 +1,4 @@
+import {PropertyProps} from '@/interfaces/index'
 export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     {
       name: "Villa Ocean Breeze",
