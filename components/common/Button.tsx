@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { buttonProps } from "@/interfaces";
+function Button({text,height,bgColor,textColor}:buttonProps) {
 
-function Button() {
   return (
-    <div>Button</div>
-  )
+    <button className={`${bgColor} ${textColor} h-[${height}] rounded-full p-4 flex justify-center items-center`}>
+      {text}
+    </button>
+  );
 }
 
-export default Button
+export default Button;

@@ -17,6 +17,9 @@ export default {
       'xl2': '1440px',
       'xl3': '1728px',
     },
+    fontFamily: {
+      quicksand: ["Quicksand", "sans-serif"],
+    },
     }
   },
   plugins: [],

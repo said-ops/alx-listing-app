@@ -1,3 +1,11 @@
+// button props
+export interface buttonProps{
+  text:string,
+  height:string,
+  bgColor:string,
+  textColor:string
+}
+
 //property props 
 export interface PropertyProps {
     name: string;
