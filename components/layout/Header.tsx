@@ -64,9 +64,10 @@ const Header: React.FC = () => {
         ></Button>
       </div>
       {/* nav bar setion */}
-      <nav className="px-16 mt-8 flex items-center justify-between">
+      <nav className="lg:px-16 mt-8 px-4 flex items-center lg:justify-between justify-evenly">
         {/* logo */}
         <svg
+        className="hidden md:block"
           width="60"
           height="32"
           viewBox="0 0 60 32"
@@ -95,7 +96,10 @@ const Header: React.FC = () => {
           />
         </svg>
         {/* header form */}
-        <form action="#" className="flex items-center gap-4  border border-gray-500 rounded-full border-solid border-1 p-4 ">
+        <form
+          action="#"
+          className="flex items-center lg:gap-4  border border-gray-500 rounded-full border-solid border-1 p-4 "
+        >
           <fieldset className="flex flex-col gap-3 text-seconadyColor">
             <label htmlFor="destination" className=" text-[16px]">
               Location
@@ -113,13 +117,13 @@ const Header: React.FC = () => {
             </label>
             <DateInput id="checkin" onChange={handleDateChange} />
           </fieldset>
-          <fieldset className="flex flex-col gap-3 text-seconadyColor">
+          <fieldset className="flex flex-col gap-3 text-seconadyColor ">
             <label htmlFor="checkout" className=" text-[16px]">
               Check out
             </label>
             <DateInput id="checkout" onChange={handleDateChange} />
           </fieldset>
-          <fieldset className="flex flex-col gap-3 text-seconadyColor">
+          <fieldset className=" flex-col gap-3 text-seconadyColor hidden lg:flex">
             <label htmlFor="guest" className=" text-[16px]">
               People
             </label>
@@ -132,8 +136,8 @@ const Header: React.FC = () => {
           </fieldset>
           <button className="w-[42px] h-[42px] rounded-full bg-[#FFA800] flex items-center justify-center ">
             <svg
-              width="34"
-              height="34"
+              width="20"
+              height="20"
               viewBox="0 0 34 34"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -155,10 +159,39 @@ const Header: React.FC = () => {
           </button>
         </form>
         {/* sign/signup butoons */}
-        <div className="flex gap-2">
-        <Button text="Sign in" bgColor="bg-primaryColor" textColor="text-white" height="45px" width="103px"/>
-        <Button text="Sign up" bgColor="bg-[#ECECEC]" textColor="text-secondaryColor" height="45px" width="103px"/>
+        <div className=" gap-2 hidden xl:flex">
+          <Button
+            text="Sign in"
+            bgColor="bg-primaryColor"
+            textColor="text-white"
+            height="45px"
+            width="103px"
+          />
+          <Button
+            text="Sign up"
+            bgColor="bg-[#ECECEC]"
+            textColor="text-secondaryColor"
+            height="45px"
+            width="103px"
+          />
         </div>
+       <div className="bg-primaryColor p-2 rounded-full xl:hidden">
+       <svg
+        
+        width="44"
+        height="44"
+        viewBox="0 0 46 46"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M22.8063 25.6118C27.3398 25.6118 31.0288 21.9228 31.0288 17.3875C31.0288 12.853 27.3398 9.16406 22.8063 9.16406C18.2728 9.16406 14.5802 12.853 14.5802 17.3875C14.5793 21.9228 18.2728 25.6118 22.8063 25.6118ZM23.0004 1.88672C34.6405 1.88672 44.1136 11.358 44.1136 23C44.1136 28.5173 41.9843 33.5459 38.5065 37.3112C37.2559 34.3751 35.2281 31.8478 32.6082 29.9701C29.727 27.9082 26.3381 26.7896 22.8099 26.7366C22.8054 26.7357 22.8018 26.7357 22.7973 26.7366C19.324 26.7887 15.9818 27.8758 13.1301 29.8793C10.5399 31.6996 8.51216 34.1577 7.22739 37.0201C3.90677 33.2889 1.88708 28.3762 1.88708 23C1.88708 11.358 11.3602 1.88672 23.0004 1.88672ZM38.5658 7.43547C42.7238 11.5934 45.013 17.1206 45.013 23C45.013 28.8794 42.7229 34.4075 38.5658 38.5645C34.4087 42.7225 28.8815 45.0117 23.0004 45.0117C17.1228 45.0117 11.592 42.7225 7.43493 38.5645C3.27696 34.4075 0.986847 28.8794 0.986847 23C0.986847 17.1206 3.27696 11.5934 7.43403 7.43547C11.592 3.2784 17.1228 0.988281 23.0004 0.988281C28.8815 0.988281 34.4087 3.2784 38.5658 7.43547Z"
+          fill="white"
+        />
+      </svg>
+       </div>
       </nav>
     </header>
   );
