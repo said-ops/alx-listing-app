@@ -4,6 +4,7 @@ export interface buttonProps{
   height:string,
   bgColor:string,
   textColor:string
+  width?:string
 }
 
 //property props 
