@@ -1,9 +1,13 @@
 import React from "react";
 import { buttonProps } from "@/interfaces";
+
+
 function Button({text,height,bgColor,textColor,width}:buttonProps) {
 
   return (
-    <button className={`${bgColor} ${textColor} h-[${height}] w-[${width}]  rounded-full p-4 flex justify-center items-center `}>
+    <button className={`flex justify-center items-center ${textColor}  ${bgColor} rounded-full`}
+    style={{width,height}}
+    >
       {text}
     </button>
   );
